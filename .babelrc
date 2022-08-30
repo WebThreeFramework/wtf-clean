@@ -1,0 +1,22 @@
+{
+  "env": {
+    "test": {
+      "presets": [
+        "next/babel",
+        "@babel/preset-env", 
+        ["@babel/preset-react", {"runtime": "automatic"}],
+        "@babel/preset-typescript"
+      ],
+      "plugins": [
+       ["module-resolver", {
+         "root": ["./test"],
+         "alias": {
+          "assets": "./src/assets"
+         }
+      }]]
+    }
+  },
+  "plugins": [
+    "module-resolver"
+  ]
+}
