@@ -1,3 +1,3 @@
 declare module 'wtf-clean' {
-    App: any;
+    WebApp: any;
 }

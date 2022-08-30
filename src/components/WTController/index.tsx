@@ -14,7 +14,8 @@ const WTControllerContext = createContext({
 
 export const WTController: WTComponent<WTControllerArguments> = (props: WTControllerArguments) => {
     const { ViewerComponent, Controller, as, model: initialModel } = props;
-    const state = WTMasterController(Controller, initialModel);
+    const useableController = Controller ? Controller : () => {};
+    const state = WTMasterController(useableController, initialModel);
     const {methods, model, triggers} = state;
 
     return (

@@ -1,7 +1,7 @@
-import { useController } from "components/WTController";
+import { useController } from "../WTController";
+import WTForm from "../../wrapper/WTForm";
 import { useFormikContext } from "formik";
 import { ReactNode, useEffect } from "react";
-import WTForm from "wrapper/WTForm";
 
 const MTView = ({children, as}: {children: ReactNode; as?: string;}) => {
     let output = <>{children}</>;

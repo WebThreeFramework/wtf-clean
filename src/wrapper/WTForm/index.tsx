@@ -1,5 +1,5 @@
-import { WTExternal_FormComponent } from "constants/external";
-import { WTComponent } from "types/common";
+import { WTExternal_FormComponent } from "../../constants/external";
+import { WTComponent } from "../../types/common";
 
 const WTForm: WTComponent<any> = ({initial, submit, children}: any) => {
     if(!initial) return null;

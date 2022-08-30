@@ -1,5 +1,9 @@
-export const WTFApp = () => {
-    return <>WTF!!!</>
+export const WebApp = (nextArgs: any, router: any) => {
+    const { Component, pageProps } = nextArgs;
+    
+    return (
+        <Component />
+    )
 }
 
-export default WTFApp;
+export default WebApp;
